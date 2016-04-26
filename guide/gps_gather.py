@@ -13,48 +13,45 @@ def gps_gather( drone ):
         drone.takeoff()
         drone.hover(2.0)
         print "Battery takeoff: ", drone.battery
+        print "Battery takeoff: ", drone.gps
+        lat = drone.gps[0]
+        lon = drone.gps[1]
+
+        print lat, lon
 
 
         a = 2.0
         b=a+1.0
         startTime = drone.time
         while drone.time - startTime < a:
-                #print "zmena vysky: ",abs(height-previousHeight)
             sx, sy, sz, sa = 0.1, 0.0, 0.0, 0.0
             drone.moveXYZA(sx, sy, sz, sa)
             drone.moveXYZA(0, 0, 0, 0)
         while drone.time - startTime < b:
-                #print "zmena vysky: ",abs(height-previousHeight)
             drone.moveXYZA(0.0, 0.0, 0.0, 0.0)
         drone.hover(2.0)
 
         startTime = drone.time
         while drone.time - startTime < a:
-                #print "zmena vysky: ",abs(height-previousHeight)
             sx, sy, sz, sa = 0, 0.1, 0.0, 0.0
             drone.moveXYZA(sx, sy, sz, sa)
         while drone.time - startTime < b:
-                #print "zmena vysky: ",abs(height-previousHeight)
             drone.moveXYZA(0.0, 0.0, 0.0, 0.0)
         drone.hover(2.0)
 
         startTime = drone.time
         while drone.time - startTime < a:
-                #print "zmena vysky: ",abs(height-previousHeight)
             sx, sy, sz, sa = -0.1, 0.0, 0.0, 0.0
             drone.moveXYZA(sx, sy, sz, sa)
         while drone.time - startTime < b:
-                #print "zmena vysky: ",abs(height-previousHeight)
             drone.moveXYZA(0.0, 0.0, 0.0, 0.0)
         drone.hover(2.0)
 
         startTime = drone.time
         while drone.time - startTime < a:
-                #print "zmena vysky: ",abs(height-previousHeight)
             sx, sy, sz, sa = 0, -0.1, 0.0, 0.0
             drone.moveXYZA(sx, sy, sz, sa)
         while drone.time - startTime < b:
-                #print "zmena vysky: ",abs(height-previousHeight)
             drone.moveXYZA(0.0, 0.0, 0.0, 0.0)
         drone.hover(2.0)
 
