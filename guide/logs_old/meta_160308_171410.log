@@ -1,0 +1,4 @@
+['lesson4.py', 'test']
+navdata: logs/navdata_160308_171410.log.gz
+atcmd: logs/atcmd_160308_171410.txt
+console: logs/console_src_160308_171410.log

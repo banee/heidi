@@ -1,0 +1,6 @@
+['lesson6.py', 'test']
+navdata: logs/navdata_160322_171145.log.gz
+atcmd: logs/atcmd_160322_171145.txt
+console: logs/console_src_160322_171145.log
+video: logs/video_160322_171147.bin
+video_rec: logs/video_rec_160322_171147.bin

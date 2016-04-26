@@ -1,0 +1,4 @@
+['gps_gather.py', 'test']
+navdata: logs/navdata_160419_180712.log.gz
+atcmd: logs/atcmd_160419_180712.txt
+console: logs/console_src_160419_180712.log

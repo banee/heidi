@@ -8,7 +8,7 @@ from ardrone2 import ARDrone2, ManualControlException
 def scanVersion0( drone, timeout=10.0 ):
     startTime = drone.time
     while drone.time - startTime < timeout:
-        sx, sy, sz, sa = 0.0, 0.0, 0.0, 0.3
+        sx, sy, sz, sa = 0.0, 0.0, 0.0, 0.1
         drone.moveXYZA( sx, sy, sz, sa )
     drone.hover(0.1) # stop rotation
 

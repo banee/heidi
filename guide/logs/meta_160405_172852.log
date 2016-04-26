@@ -1,0 +1,4 @@
+['prelet_nad_stolem.py', 'logs\\meta_160315_182656.lo']
+navdata: logs/navdata_160405_172852.log.gz
+atcmd: logs/atcmd_160405_172852.txt
+console: logs/console_src_160405_172852.log
